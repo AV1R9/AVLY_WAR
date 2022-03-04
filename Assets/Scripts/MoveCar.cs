@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoveCar : MonoBehaviour
 {
-   	public void GetInput()
+
+   
+	public void GetInput()
 	{
 		m_horizontalInput = Input.GetAxis("Horizontal");
 		m_verticalInput = Input.GetAxis("Vertical");
@@ -59,5 +61,5 @@ public class MoveCar : MonoBehaviour
 	public Transform frontDriverT, frontPassengerT;
 	public Transform rearDriverT, rearPassengerT;
 	public float maxSteerAngle = 30;
-	public float motorForce = 50;
+	public float motorForce = 1000;
 }
